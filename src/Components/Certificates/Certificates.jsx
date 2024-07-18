@@ -35,7 +35,9 @@ export default function Certificates() {
     <Box sx={{ 
       padding: 6,
       
-      textAlign: 'center'
+      textAlign: 'center',
+      bgcolor: "black",
+      color:"#8bc34a"
     }}>
       <Typography variant="h4" gutterBottom>
         Certificates
