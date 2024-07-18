@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Portfolio",
-    thumbnail: `${process.env.PUBLIC_URL}/thumbnail/thumbnail1.png`,
+    thumbnail: `${process.env.PUBLIC_URL}/thumbnail/th2.jpeg`,
     gitLink: "https://github.com/subhankarktw/Portfolio_ss.git",
   },
 ];

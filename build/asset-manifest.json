@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c478060.css",
+    "main.js": "/static/js/main.e6460fe7.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/react.png": "/static/media/react.07d9e407d4e491c548d5.png",
+    "static/media/redux.png": "/static/media/redux.021760cd6160460b6d9e.png",
+    "static/media/code.png": "/static/media/code.aa1044e3d9d44da155fd.png",
+    "static/media/github.png": "/static/media/github.22cfdd1cba253783ce51.png",
+    "static/media/html-5.png": "/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.268c4375260420e8d982.png",
+    "static/media/css-3.png": "/static/media/css-3.4a6549b8c2b4cda8bb88.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.0c478060.css.map": "/static/css/main.0c478060.css.map",
+    "main.e6460fe7.js.map": "/static/js/main.e6460fe7.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c478060.css",
+    "static/js/main.e6460fe7.js"
+  ]
+}
