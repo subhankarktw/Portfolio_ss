@@ -19,10 +19,10 @@ const Home = () => {
           minHeight: "100vh",
           width: "100vw",
           textAlign: "center",
-          // backgroundImage: `url("https://wallpapercave.com/wp/wp8046982.jpg")`, // Set background image
-          bgcolor: "black",
+          backgroundImage: `url("https://wallpaperaccess.com/full/5277927.jpg")`, // Set background image
           backgroundSize: "cover",
           color: "#8bc34a",
+          backgroundColor: "rgba(120, 0, 0, 0.8)", // Adjust opacity here (0.7 for example)
         }}
       >
         <Avatar
@@ -30,7 +30,7 @@ const Home = () => {
           src="https://media.licdn.com/dms/image/D5635AQHTIK-rbiS4PA/profile-framedphoto-shrink_400_400/0/1718156778996?e=1721570400&v=beta&t=oeyVL3RMdYFMPFzk8VL9FpyE8xRJk7_OAbdoFLrRNi4"
           style={{ width: 250, height: 250, marginBottom: 20 }}
         />
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h5" gutterBottom>
           Hi, I'm Subhankar Sinha!
         </Typography>
         <Typography variant="h5" gutterBottom>
@@ -50,8 +50,8 @@ const Home = () => {
       <Teechskill />
       <About />
       <Education />
-      <Project/>
-      <Certificates/>
+      <Project />
+      <Certificates />
     </>
   );
 };

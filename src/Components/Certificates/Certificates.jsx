@@ -33,7 +33,7 @@ function Item(props) {
 export default function Certificates() {
   return (
     <Box sx={{ 
-      padding: 6,
+      padding: 4,
       
       textAlign: 'center',
       bgcolor: "black",
@@ -42,7 +42,9 @@ export default function Certificates() {
       <Typography variant="h4" gutterBottom>
         Certificates
       </Typography>
-      <Carousel interval={4000}>
+      <Carousel interval={4000} sx={{
+        p:10
+      }}>
         {certificates.map((item, i) => <Item key={i} item={item} />)}
       </Carousel>
     </Box>
