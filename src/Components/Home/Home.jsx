@@ -6,11 +6,13 @@ import Education from "../Education/Education";
 import Teechskill from "../Techskill/Techskill";
 import Certificates from "../Certificates/Certificates";
 import Project from "../Project/Project";
+import HireMe from "../Contact/Contact";
 
 const Home = () => {
   return (
     <>
       <Box
+        id="home"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -53,6 +55,7 @@ const Home = () => {
       <Education />
       <Project />
       <Certificates />
+      <HireMe/>
     </>
   );
 };

@@ -34,7 +34,7 @@ const Education = () => {
   ];
 
   return (
-    <Box bgcolor="#000" color="#8bc34a" p={4}>
+    <Box bgcolor="#000" color="#8bc34a" p={4} id="education-journey">
       <Typography variant="h4" gutterBottom align="center" sx={{ mt: 10, mb: 5 }}>
         Education Journey
       </Typography>

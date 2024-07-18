@@ -33,6 +33,7 @@ function Item(props) {
 export default function Certificates() {
   return (
     <Box
+      id="certificates"
       sx={{
         textAlign: "center",
         bgcolor: "black",

@@ -57,7 +57,7 @@ const Techskill = () => {
   };
 
   return (
-    <Box sx={{ width: "80%", margin: "auto", mt: 4 }}>
+    <Box id="tech-skill" sx={{ width: "80%", margin: "auto", mt: 10 }}>
       <Slider {...settings}>
         {skills.map((skill, index) => (
           <Box

@@ -12,10 +12,12 @@ const About = () => {
 
   return (
     <Box
+      id="about"
       sx={{
         backgroundColor: "black",
         color: "#8bc34a",
         padding: 4,
+        height:"100vh",
         textAlign: "center",
         display: "flex",
         justifyContent: "center",

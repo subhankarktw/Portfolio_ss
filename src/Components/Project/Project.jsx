@@ -25,6 +25,7 @@ const projects = [
 const Project = () => {
   return (
     <Box
+      id="projects"
       sx={{
         padding: 4,
         bgcolor: "black",

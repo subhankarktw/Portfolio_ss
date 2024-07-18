@@ -66,8 +66,12 @@ export default function Navbar() {
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
+              <MenuItem onClick={handleClose} component="a" href="#home">Home</MenuItem>
+              <MenuItem onClick={handleClose} component="a" href="#about">About</MenuItem>
+              <MenuItem onClick={handleClose} component="a" href="#education-journey">Education Journey</MenuItem>
+              <MenuItem onClick={handleClose} component="a" href="#projects">Projects</MenuItem>
+              <MenuItem onClick={handleClose} component="a" href="#certificates">Certificates</MenuItem>
+              <MenuItem onClick={handleClose} component="a" href="#contact">Hire me</MenuItem>
             </Menu>
           </div>
         </Toolbar>
