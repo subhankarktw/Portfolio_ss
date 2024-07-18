@@ -20,7 +20,8 @@ const Home = () => {
           width: "100vw",
           textAlign: "center",
           backgroundImage: `url("https://wallpaperaccess.com/full/5277927.jpg")`, // Set background image
-          backgroundSize: "cover",
+          backgroundSize: "fixed",
+          backgroundAttachment: "fixed",
           color: "#8bc34a",
           backgroundColor: "rgba(120, 0, 0, 0.8)", // Adjust opacity here (0.7 for example)
         }}

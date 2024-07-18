@@ -17,7 +17,6 @@ const About = () => {
         color: "#8bc34a",
         padding: 4,
         textAlign: "center",
-
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
