@@ -36,7 +36,9 @@ export default function Certificates() {
       id="certificates"
       sx={{
         textAlign: "center",
-        bgcolor: "black",
+        backgroundImage: `url(${process.env.PUBLIC_URL}/wallpaper.jpg)`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
         color: "#8bc34a",
         p: 2, // Reduce padding here
       }}

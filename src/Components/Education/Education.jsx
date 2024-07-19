@@ -34,13 +34,35 @@ const Education = () => {
   ];
 
   return (
-    <Box bgcolor="#000" color="#8bc34a" p={4} id="education-journey">
-      <Typography variant="h4" gutterBottom align="center" sx={{ mt: 10, mb: 5 }}>
+    <Box
+      bgcolor="#000"
+      color="#8bc34a"
+      p={4}
+      id="education-journey"
+      sx={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/wallpaper.jpg)`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <Typography
+        variant="h4"
+        gutterBottom
+        align="center"
+        sx={{ mt: 10, mb: 5 }}
+      >
         Education Journey
       </Typography>
       <Grid container spacing={3} justifyContent="center">
         {educationDetails.map((detail, index) => (
-          <Grid item xs={12} sm={6} lg={6} key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            lg={6}
+            key={index}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
             <Paper
               elevation={3}
               sx={{
@@ -54,7 +76,6 @@ const Education = () => {
                 justifyContent: "space-between",
                 backgroundColor: "#000", // Black background
                 color: "#8bc34a", // Light green text color
-                boxShadow: "0 8px 40px rgba(139, 195, 74, 0.5)", // Increased box shadow
                 "&:hover": {
                   boxShadow: "0 12px 60px rgba(139, 195, 74, 0.7)", // Darker shadow on hover
                   transform: "scale(1.02)",

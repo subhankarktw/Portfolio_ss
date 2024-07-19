@@ -23,22 +23,22 @@ const Home = () => {
           minHeight: "100vh",
           width: "100vw",
           textAlign: "center",
-          backgroundImage: `url("https://wallpaperaccess.com/full/5277927.jpg")`, // Set background image
+          backgroundImage: `url(${process.env.PUBLIC_URL}/wallpaper.jpg)`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           color: "#8bc34a",
-          backgroundColor: "rgba(120, 0, 0, 0.8)", // Adjust opacity here (0.7 for example)
+          backgroundColor: "rgba(120, 0, 0, 0.7)", // Adjust opacity here (0.7 for example)
         }}
       >
         <Avatar
           alt="Subhankar Sinha"
-          src="https://media.licdn.com/dms/image/D5635AQHTIK-rbiS4PA/profile-framedphoto-shrink_400_400/0/1718156778996?e=1721570400&v=beta&t=oeyVL3RMdYFMPFzk8VL9FpyE8xRJk7_OAbdoFLrRNi4"
+          src={`${process.env.PUBLIC_URL}/self.jpeg`}
           style={{ width: 250, height: 250, marginBottom: 20 }}
         />
         <Typography variant="h5" gutterBottom style={{ fontWeight: "bold" }}>
           Hi, I'm Subhankar Sinha!
         </Typography>
-        <Typography variant="h5" gutterBottom>
+        <Box sx={{ display: "inline-block", fontWeight: "bold" }}>
           <ReactTyped
             strings={[
               "I am an MCA Student",
@@ -49,20 +49,33 @@ const Home = () => {
             typeSpeed={40}
             backSpeed={50}
             loop
-            style={{ fontWeight: "bold" }}
           />
-        </Typography>
+        </Box>
         <Box sx={{ marginTop: 4 }}>
-          <Typography variant="h5" style={{ fontWeight: "bold" }}>
-            Hire me{" "}
-            <IconButton
-              color="inherit"
-              target="_blank"
+          <Typography variant="h4" style={{ fontWeight: "bold" }}>
+            <a
               href="https://www.linkedin.com/in/subhankar-sinha-485242219"
-              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+                position: "relative",
+              }}
             >
-              <LinkedInIcon />
-            </IconButton>
+              Hire me
+              <IconButton
+                color="inherit"
+                aria-label="LinkedIn"
+                sx={{
+                  position: "absolute",
+                  left: "100%",
+                  transform: "translateX(5px)",
+                }}
+              >
+                <LinkedInIcon />
+              </IconButton>
+            </a>
           </Typography>
         </Box>
       </Box>

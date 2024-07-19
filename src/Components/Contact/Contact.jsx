@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
-import { Box, Button, TextField, Typography, useTheme, useMediaQuery } from '@mui/material';
+import React, { useState } from "react";
+import {
+  Box,
+  Button,
+  TextField,
+  Typography,
+  useTheme,
+  useMediaQuery,
+  InputAdornment,
+} from "@mui/material";
 
 const HireMe = () => {
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,37 +22,38 @@ const HireMe = () => {
   };
 
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-  const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
-  const formWidth = isSmallScreen ? '80%' : isMediumScreen ? '60%' : '40%';
+  const formWidth = isSmallScreen ? "80%" : isMediumScreen ? "60%" : "40%";
 
   return (
     <Box
       id="contact"
       sx={{
-        width: '100vw',
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        bgcolor: 'black',
-        color: '#8bc34a',
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundImage: `url(${process.env.PUBLIC_URL}/wallpaper.jpg)`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        color: "#8bc34a",
         p: 2,
       }}
     >
-      <Typography variant="h4" mb={2} sx={{ color: '#8bc34a' }}>
+      <Typography variant="h4" mb={2} sx={{ color: "#8bc34a" }}>
         Contact Me
       </Typography>
       <Box
         component="form"
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
+          display: "flex",
+          flexDirection: "column",
           width: formWidth,
-          color: '#8bc34a',
-          m: 2, // Consistent margin
+          color: "#8bc34a",
+          m: 2,
         }}
         onSubmit={handleSubmit}
       >
@@ -55,8 +64,17 @@ const HireMe = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          InputProps={{ style: { color: '#8bc34a' } }}
-          InputLabelProps={{ style: { color: '#8bc34a' } }}
+          InputProps={{
+            style: { color: "#8bc34a" },
+            endAdornment: email && (
+              <InputAdornment position="end">
+                <Box
+                  sx={{ width: "100%", borderBottom: "2px solid #8bc34a" }}
+                />
+              </InputAdornment>
+            ),
+          }}
+          InputLabelProps={{ style: { color: "#8bc34a" } }}
           sx={{ mb: 2 }}
         />
         <TextField
@@ -65,8 +83,17 @@ const HireMe = () => {
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           required
-          InputProps={{ style: { color: '#8bc34a' } }}
-          InputLabelProps={{ style: { color: '#8bc34a' } }}
+          InputProps={{
+            style: { color: "#8bc34a" },
+            endAdornment: subject && (
+              <InputAdornment position="end">
+                <Box
+                  sx={{ width: "100%", borderBottom: "2px solid #8bc34a" }}
+                />
+              </InputAdornment>
+            ),
+          }}
+          InputLabelProps={{ style: { color: "#8bc34a" } }}
           sx={{ mb: 2 }}
         />
         <TextField
@@ -77,11 +104,24 @@ const HireMe = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
-          InputProps={{ style: { color: '#8bc34a' } }}
-          InputLabelProps={{ style: { color: '#8bc34a' } }}
+          InputProps={{
+            style: { color: "#8bc34a" },
+            endAdornment: message && (
+              <InputAdornment position="end">
+                <Box
+                  sx={{ width: "100%", borderBottom: "4px solid #8bc34a" }}
+                />
+              </InputAdornment>
+            ),
+          }}
+          InputLabelProps={{ style: { color: "#8bc34a" } }}
           sx={{ mb: 2 }}
         />
-        <Button type="submit" variant="contained" sx={{ bgcolor: '#8bc34a', color: 'black' }}>
+        <Button
+          type="submit"
+          variant="contained"
+          sx={{ bgcolor: "#8bc34a", color: "black" }}
+        >
           Send
         </Button>
       </Box>

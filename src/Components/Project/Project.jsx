@@ -28,7 +28,9 @@ const Project = () => {
       id="projects"
       sx={{
         padding: 4,
-        bgcolor: "black",
+        backgroundImage: `url(${process.env.PUBLIC_URL}/wallpaper.jpg)`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
         color: "#8bc34a",
         minHeight: "100vh",
         display: "flex",
@@ -58,10 +60,10 @@ const Project = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-                transition: "box-shadow 0.3s ease-in-out",
                 "&:hover": {
-                  boxShadow: "0 4px 8px #8bc34a",
+                  boxShadow: "0 12px 60px rgba(139, 195, 74, 0.7)", // Darker shadow on hover
+                  transform: "scale(1.02)",
+                  transition: "0.3s ease-in-out",
                 },
               }}
             >
