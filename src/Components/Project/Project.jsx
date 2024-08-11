@@ -20,6 +20,11 @@ const projects = [
     thumbnail: `${process.env.PUBLIC_URL}/thumbnail/th2.jpeg`,
     gitLink: "https://github.com/subhankarktw/Portfolio_ss.git",
   },
+  {
+    title: "Happy Moments",
+    thumbnail: "thumbnail/home01.jpg",
+    gitLink: "https://github.com/subhankarktw/HappyMoment",
+  },
 ];
 
 const Project = () => {
